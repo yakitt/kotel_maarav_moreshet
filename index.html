@@ -4,205 +4,295 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>הכותל המערבי – עבודת חקר במורשת</title>
+  <title>הכותל המערבי – עבודת חקר</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#main">דילוג לתוכן</a>
-
-  <header class="hero" id="top">
-    <nav class="nav">
-      <div class="nav__brand">הכותל המערבי</div>
-      <ul class="nav__links">
-        <li><a href="#questions">שאלות חקר</a></li>
-        <li><a href="#about">על המקום</a></li>
-        <li><a href="#info">דף מידע</a></li>
-        <li><a href="#interview">ריאיון</a></li>
-        <li><a href="#summary">סיכום</a></li>
-        <li><a href="#sources">מקורות</a></li>
-      </ul>
-    </nav>
-
-    <div class="hero__content">
-      <p class="kicker">עבודת חקר במורשת</p>
-      <h1>הכותל המערבי</h1>
-
-      <div class="meta">
-        <div class="meta__item"><span class="meta__label">שם:</span> <span class="meta__value">__________</span></div>
-        <div class="meta__item"><span class="meta__label">כיתה:</span> <span class="meta__value">__________</span></div>
-        <div class="meta__item"><span class="meta__label">תאריך:</span> <span class="meta__value">__________</span></div>
-      </div>
-
-      <p class="hero__note">
-        כאן תמצאו שאלות חקר, מידע לתייר, ריאיון קצר וסיכום אישי על אחד האתרים המזוהים ביותר עם ירושלים.
-      </p>
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="logo">✦</span>
+      <span>הכותל המערבי</span>
     </div>
+
+    <nav class="topbar__nav">
+      <a href="#questions">שאלות</a>
+      <a href="#answers">תשובות</a>
+      <a href="#info">מידע לתייר</a>
+      <a href="#interview">ריאיון</a>
+      <a href="#summary">סיכום</a>
+      <a href="#sources">מקורות</a>
+    </nav>
   </header>
 
-  <main id="main" class="container">
+  <section class="hero" id="top">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="badge">עבודת חקר במורשת</div>
+      <h1>הכותל המערבי</h1>
+      <p class="subtitle">
+        אתר צבעוני עם שאלות חקר — לחיצה על שאלה מעבירה ישירות לתשובה המתאימה.
+      </p>
+
+      <div class="meta">
+        <div><span class="meta__k">שם:</span> ________</div>
+        <div><span class="meta__k">כיתה:</span> ________</div>
+        <div><span class="meta__k">תאריך:</span> ________</div>
+      </div>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#questions">להתחיל →</a>
+        <a class="btn btn--ghost" href="#info">מידע לתייר</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
     <!-- שאלות חקר -->
     <section id="questions" class="section">
-      <h2>שאלות חקר</h2>
-      <p class="lead">בחרתי לחקור את הכותל המערבי דרך שאלות שמחברות היסטוריה, תרבות וחוויה אישית.</p>
-
-      <ol class="cards">
-        <li class="card">מהו הכותל המערבי מבחינה היסטורית, ולמה הוא נחשב קדוש?</li>
-        <li class="card">איך השתנה מעמד הכותל לאורך התקופות (בית שני, התקופה העות’מאנית, המאה ה־20)?</li>
-        <li class="card">כיצד הכותל משפיע על זהות יהודית ועל תחושת שייכות?</li>
-        <li class="card">אילו טקסים ומנהגים מתקיימים בכותל, ומה משמעותם?</li>
-        <li class="card">איך נשמרים כללי כבוד והתנהגות במקום שמגיעים אליו אנשים ממגוון תרבויות ואמונות?</li>
-        <li class="card">מה האתגרים סביב ניהול האתר (בטיחות, עומסים, רגישות דתית)?</li>
-        <li class="card">איך תייר שאינו יהודי חווה את הכותל, ומה הוא לוקח איתו מהביקור?</li>
-      </ol>
-    </section>
-
-    <!-- על המקום -->
-    <section id="about" class="section">
-      <h2>על המקום</h2>
-
-      <div class="grid">
-        <article class="panel">
-          <h3>פתיחה</h3>
-          <p>
-            הכותל המערבי הוא אחד האתרים המזוהים ביותר עם העם היהודי ועם ירושלים.
-            עבור רבים הוא סמל של תפילה, זיכרון, תקווה וחיבור להיסטוריה.
-          </p>
-        </article>
-
-        <article class="panel">
-          <h3>מהו הכותל</h3>
-          <p>
-            הכותל הוא קיר תמך מתקופת בית שני, שנבנה כחלק מהרחבת הר הבית.
-            לאורך דורות רבים יהודים התפללו לידו וביקשו להתקרב ככל האפשר למקום המקדש.
-          </p>
-        </article>
-
-        <article class="panel">
-          <h3>היום</h3>
-          <p>
-            כיום הכותל הוא מקום מפגש מיוחד: תפילות יומיומיות, טקסי בר/בת מצווה,
-            ביקורים של תיירים מכל העולם ואירועים ממלכתיים. הביקור בו משלב היסטוריה,
-            רגש ומשמעות אישית.
-          </p>
-        </article>
+      <div class="section__head">
+        <h2>שאלות חקר</h2>
+        <p class="muted">לחצי על שאלה כדי לעבור לתשובה שלה.</p>
       </div>
 
-      <div class="callout">
-        <strong>הוספת תמונות:</strong>
-        צרי תיקייה בשם <code>images</code> ושימי שם תמונה, למשל <code>kotel.jpg</code>.
-        אחר כך אפשר להחליף את הרקע של השער ב־CSS (הסבר למטה).
+      <div class="qgrid">
+        <button class="qcard" data-target="a1">
+          <span class="qtag">שאלה 1</span>
+          <span class="qtext">מהו הכותל המערבי מבחינה היסטורית, ולמה הוא נחשב קדוש?</span>
+          <span class="qgo">לקריאת התשובה</span>
+        </button>
+
+        <button class="qcard" data-target="a2">
+          <span class="qtag">שאלה 2</span>
+          <span class="qtext">איך השתנה מעמד הכותל לאורך התקופות?</span>
+          <span class="qgo">לקריאת התשובה</span>
+        </button>
+
+        <button class="qcard" data-target="a3">
+          <span class="qtag">שאלה 3</span>
+          <span class="qtext">כיצד הכותל משפיע על זהות ותחושת שייכות?</span>
+          <span class="qgo">לקריאת התשובה</span>
+        </button>
+
+        <button class="qcard" data-target="a4">
+          <span class="qtag">שאלה 4</span>
+          <span class="qtext">אילו טקסים ומנהגים מתקיימים בכותל, ומה משמעותם?</span>
+          <span class="qgo">לקריאת התשובה</span>
+        </button>
+
+        <button class="qcard" data-target="a5">
+          <span class="qtag">שאלה 5</span>
+          <span class="qtext">איך נשמרים כללי כבוד והתנהגות במקום מגוון?</span>
+          <span class="qgo">לקריאת התשובה</span>
+        </button>
+
+        <button class="qcard" data-target="a6">
+          <span class="qtag">שאלה 6</span>
+          <span class="qtext">מה האתגרים בניהול האתר (עומסים, בטיחות, רגישות)?</span>
+          <span class="qgo">לקריאת התשובה</span>
+        </button>
+
+        <button class="qcard" data-target="a7">
+          <span class="qtag">שאלה 7</span>
+          <span class="qtext">איך תייר שאינו יהודי חווה את הכותל?</span>
+          <span class="qgo">לקריאת התשובה</span>
+        </button>
+      </div>
+
+      <div class="tip">
+        ✨ טיפ: אפשר להוסיף תמונה אמיתית לראש הדף — ההסבר נמצא בתוך style.css.
       </div>
     </section>
 
-    <!-- דף מידע -->
-    <section id="info" class="section">
-      <h2>דף מידע לתייר</h2>
+    <!-- תשובות -->
+    <section id="answers" class="section">
+      <div class="section__head">
+        <h2>תשובות לשאלות החקר</h2>
+        <p class="muted">כל תשובה נמצאת בכרטיס צבעוני. בסוף כל תשובה יש כפתור חזרה לשאלות.</p>
+      </div>
 
-      <div class="info">
-        <div class="info__item">
-          <div class="info__title">מיקום</div>
-          <div class="info__text">העיר העתיקה בירושלים, רחבת הכותל</div>
-        </div>
-
-        <div class="info__item">
-          <div class="info__title">כניסה</div>
-          <div class="info__text">חינם</div>
-        </div>
-
-        <div class="info__item">
-          <div class="info__title">שעות ביקור</div>
-          <div class="info__text">בדרך כלל פתוח בכל שעות היממה (מומלץ לבדוק עומסים/הנחיות)</div>
-        </div>
-
-        <div class="info__item">
-          <div class="info__title">הגעה</div>
-          <div class="info__text">תחבורה ציבורית לשער יפו/שער האשפות + הליכה</div>
-        </div>
-
-        <div class="info__item">
-          <div class="info__title">כללי התנהגות</div>
-          <ul class="info__list">
-            <li>לבוש צנוע מומלץ</li>
-            <li>שקט וכבוד למתפללים</li>
-            <li>הפרדה בין נשים לגברים באזורי התפילה</li>
-            <li>צילום מותר ברוב הזמן, אך בשבתות וחגים יש מגבלות</li>
+      <article id="a1" class="acard accent-1">
+        <header class="acard__head">
+          <div class="pill">שאלה 1</div>
+          <h3>מהו הכותל המערבי מבחינה היסטורית, ולמה הוא נחשב קדוש?</h3>
+        </header>
+        <div class="acard__body">
+          <p><strong>כאן תכתבי את התשובה שלך.</strong> (אפשר 2–4 פסקאות)</p>
+          <ul>
+            <li>מהו הכותל: קיר תמך מתקופת בית שני.</li>
+            <li>הקשר להר הבית ולמקדש.</li>
+            <li>למה קדוש: מסורת, תפילה, זיכרון לאומי.</li>
           </ul>
         </div>
+        <footer class="acard__foot">
+          <a class="btn btn--small" href="#questions">↩ חזרה לשאלות</a>
+          <button class="btn btn--small btn--ghost" data-next="a2">תשובה הבאה →</button>
+        </footer>
+      </article>
 
-        <div class="info__item">
-          <div class="info__title">טיפ</div>
-          <div class="info__text">להגיע מוקדם בבוקר או בערב כדי להימנע מעומס ולחוות אווירה מיוחדת</div>
+      <article id="a2" class="acard accent-2">
+        <header class="acard__head">
+          <div class="pill">שאלה 2</div>
+          <h3>איך השתנה מעמד הכותל לאורך התקופות?</h3>
+        </header>
+        <div class="acard__body">
+          <p>כאן התשובה…</p>
+        </div>
+        <footer class="acard__foot">
+          <a class="btn btn--small" href="#questions">↩ חזרה לשאלות</a>
+          <button class="btn btn--small btn--ghost" data-next="a3">תשובה הבאה →</button>
+        </footer>
+      </article>
+
+      <article id="a3" class="acard accent-3">
+        <header class="acard__head">
+          <div class="pill">שאלה 3</div>
+          <h3>כיצד הכותל משפיע על זהות ותחושת שייכות?</h3>
+        </header>
+        <div class="acard__body">
+          <p>כאן התשובה…</p>
+        </div>
+        <footer class="acard__foot">
+          <a class="btn btn--small" href="#questions">↩ חזרה לשאלות</a>
+          <button class="btn btn--small btn--ghost" data-next="a4">תשובה הבאה →</button>
+        </footer>
+      </article>
+
+      <article id="a4" class="acard accent-4">
+        <header class="acard__head">
+          <div class="pill">שאלה 4</div>
+          <h3>אילו טקסים ומנהגים מתקיימים בכותל, ומה משמעותם?</h3>
+        </header>
+        <div class="acard__body">
+          <p>כאן התשובה…</p>
+        </div>
+        <footer class="acard__foot">
+          <a class="btn btn--small" href="#questions">↩ חזרה לשאלות</a>
+          <button class="btn btn--small btn--ghost" data-next="a5">תשובה הבאה →</button>
+        </footer>
+      </article>
+
+      <article id="a5" class="acard accent-5">
+        <header class="acard__head">
+          <div class="pill">שאלה 5</div>
+          <h3>איך נשמרים כללי כבוד והתנהגות במקום מגוון?</h3>
+        </header>
+        <div class="acard__body">
+          <p>כאן התשובה…</p>
+        </div>
+        <footer class="acard__foot">
+          <a class="btn btn--small" href="#questions">↩ חזרה לשאלות</a>
+          <button class="btn btn--small btn--ghost" data-next="a6">תשובה הבאה →</button>
+        </footer>
+      </article>
+
+      <article id="a6" class="acard accent-6">
+        <header class="acard__head">
+          <div class="pill">שאלה 6</div>
+          <h3>מה האתגרים בניהול האתר (עומסים, בטיחות, רגישות)?</h3>
+        </header>
+        <div class="acard__body">
+          <p>כאן התשובה…</p>
+        </div>
+        <footer class="acard__foot">
+          <a class="btn btn--small" href="#questions">↩ חזרה לשאלות</a>
+          <button class="btn btn--small btn--ghost" data-next="a7">תשובה הבאה →</button>
+        </footer>
+      </article>
+
+      <article id="a7" class="acard accent-7">
+        <header class="acard__head">
+          <div class="pill">שאלה 7</div>
+          <h3>איך תייר שאינו יהודי חווה את הכותל?</h3>
+        </header>
+        <div class="acard__body">
+          <p>כאן התשובה…</p>
+        </div>
+        <footer class="acard__foot">
+          <a class="btn btn--small" href="#questions">↩ חזרה לשאלות</a>
+          <a class="btn btn--small btn--ghost" href="#info">מידע לתייר →</a>
+        </footer>
+      </article>
+    </section>
+
+    <!-- מידע לתייר -->
+    <section id="info" class="section">
+      <div class="section__head">
+        <h2>דף מידע לתייר</h2>
+        <p class="muted">כרטיסיות קצרות וברורות.</p>
+      </div>
+
+      <div class="infogrid">
+        <div class="ibox">
+          <div class="ibox__t">מיקום</div>
+          <div class="ibox__b">העיר העתיקה בירושלים, רחבת הכותל</div>
+        </div>
+        <div class="ibox">
+          <div class="ibox__t">כניסה</div>
+          <div class="ibox__b">חינם</div>
+        </div>
+        <div class="ibox">
+          <div class="ibox__t">שעות</div>
+          <div class="ibox__b">בדרך כלל פתוח 24/7 (כדאי לבדוק הנחיות)</div>
+        </div>
+        <div class="ibox">
+          <div class="ibox__t">כללים</div>
+          <div class="ibox__b">כבוד, לבוש צנוע, שקט; בשבתות וחגים לעיתים יש מגבלות צילום</div>
         </div>
       </div>
     </section>
 
     <!-- ריאיון -->
     <section id="interview" class="section">
-      <h2>ריאיון עם מבקר</h2>
-      <p class="lead">להלן ריאיון קצר בפורמט שאלה–תשובה. אפשר להחליף בתשובות אמיתיות אחרי שראיינת מבקר/ת.</p>
+      <div class="section__head">
+        <h2>ריאיון עם מבקר</h2>
+        <p class="muted">אפשר להחליף בתשובות אמיתיות אחרי ריאיון.</p>
+      </div>
 
-      <div class="qa">
-        <details class="qa__item" open>
-          <summary>מאיפה הגעת לכותל ומה הסיבה לביקור?</summary>
-          <p>הגעתי כדי לחוות מקרוב מקום שראיתי הרבה בתמונות ולחוש את ירושלים באופן אישי.</p>
-        </details>
-
-        <details class="qa__item">
-          <summary>מה הרגשת כשהגעת לרחבה וליד האבנים?</summary>
-          <p>הרגשתי התרגשות ושקט מיוחד. היה חיבור חזק בין אנשים שונים סביב מקום אחד.</p>
-        </details>
-
-        <details class="qa__item">
-          <summary>האם עשית משהו מיוחד (תפילה, פתק, סיור)? למה?</summary>
-          <p>כתבתי פתק קטן ושמתי בין האבנים, כי זה מנהג שמסמל בקשה ותקווה.</p>
-        </details>
-
-        <details class="qa__item">
-          <summary>מה הכי הפתיע אותך במקום?</summary>
-          <p>העובדה שתיירים ומתפללים עומדים יחד — כל אחד עם המשמעות שלו, ועדיין יש כבוד הדדי.</p>
-        </details>
-
-        <details class="qa__item">
-          <summary>האם היית ממליץ לאחרים להגיע? מה היית אומר להם?</summary>
-          <p>כן. הייתי אומר/ת שזה מקום שמספר סיפור של היסטוריה חיה ומרגישים בו משהו מיוחד גם בלי רקע דתי.</p>
-        </details>
+      <div class="interview">
+        <div class="bubble">
+          <div class="bubble__q">מאיפה הגעת ולמה באת?</div>
+          <div class="bubble__a">הגעתי כדי לחוות מקרוב מקום משמעותי בירושלים.</div>
+        </div>
+        <div class="bubble">
+          <div class="bubble__q">מה הרגשת ליד האבנים?</div>
+          <div class="bubble__a">הרגשתי שקט והתרגשות, גם בגלל האנשים וגם בגלל האווירה.</div>
+        </div>
       </div>
     </section>
 
     <!-- סיכום -->
     <section id="summary" class="section">
-      <h2>סיכום: אם הייתי תייר…</h2>
-      <div class="panel">
-        <p>
-          אם הייתי תייר, הייתי מבקר בכותל המערבי כי זה מקום שמחבר בין היסטוריה חיה לבין חוויה אנושית עמוקה.
-          גם מי שלא מכיר את המסורת מרגיש שיש כאן משהו מיוחד: מפגש של אנשים, תפילות, רגשות וסיפור של עם ועיר.
-          הביקור נותן תחושה של משמעות, של זיכרון ושל תקווה.
-        </p>
+      <div class="section__head">
+        <h2>סיכום: אם הייתי תייר…</h2>
+      </div>
+      <div class="summary">
+        אם הייתי תייר, הייתי מבקר בכותל המערבי כי זה מקום שמחבר היסטוריה חיה עם חוויה אנושית עמוקה:
+        אנשים שונים נפגשים כאן, כל אחד עם הסיפור שלו, ועדיין נוצרת תחושת משמעות וזיכרון.
       </div>
     </section>
 
     <!-- מקורות -->
     <section id="sources" class="section">
-      <h2>מקורות</h2>
-      <p class="lead">הוסיפי כאן 3–6 מקורות (אתרים/ספרים/חוברות/סיורים). אפשר גם לציין תאריך צפייה.</p>
-
+      <div class="section__head">
+        <h2>מקורות</h2>
+        <p class="muted">כתבי כאן 3–6 מקורות.</p>
+      </div>
       <ul class="sources">
-        <li>מקור 1: ______________________________</li>
-        <li>מקור 2: ______________________________</li>
-        <li>מקור 3: ______________________________</li>
-        <li>מקור 4 (אופציונלי): ____________________</li>
+        <li>מקור 1: __________________________</li>
+        <li>מקור 2: __________________________</li>
+        <li>מקור 3: __________________________</li>
       </ul>
-
-      <p class="backtop"><a href="#top">חזרה למעלה ↑</a></p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__inner container">
+    <div class="container footer__inner">
       <span>© עבודת חקר במורשת</span>
-      <span class="muted">נבנה ב-HTML + CSS</span>
+      <a href="#top">למעלה ↑</a>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
