@@ -1,356 +1,70 @@
-/* style.css */
-:root{
-  --bg: #070A12;
-  --text: #F4F7FF;
-  --muted: rgba(244,247,255,.78);
-  --glass: rgba(255,255,255,.08);
-  --stroke: rgba(255,255,255,.14);
-  --shadow: 0 18px 50px rgba(0,0,0,.40);
-  --r: 18px;
-
-  --grad1: radial-gradient(1200px 600px at 80% 10%, rgba(255,198,92,.22), transparent 60%),
-           radial-gradient(900px 500px at 10% 30%, rgba(111,234,255,.20), transparent 55%),
-           radial-gradient(800px 450px at 70% 85%, rgba(180,122,255,.20), transparent 55%);
-
-  --grad2: linear-gradient(135deg, rgba(255,198,92,.22), rgba(111,234,255,.14), rgba(180,122,255,.18));
+html {
+  scroll-behavior: smooth;
 }
 
-*{ box-sizing: border-box; }
-html, body{ margin:0; padding:0; }
-html{ scroll-behavior: smooth; }
-
-body{
-  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  background: var(--grad1), linear-gradient(180deg, #070A12, #05060C 65%, #04050A);
-  color: var(--text);
-  line-height: 1.7;
-}
-
-.container{
-  width: min(1050px, calc(100% - 2rem));
-  margin: 0 auto;
-}
-
-a{ color: inherit; text-decoration: none; }
-a:hover{ text-decoration: underline; }
-
-.topbar{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(12px);
-  background: rgba(7,10,18,.55);
-  border-bottom: 1px solid var(--stroke);
-}
-
-.topbar__brand{
-  display:flex;
-  align-items:center;
-  gap: .55rem;
-  padding: .8rem 1rem;
-  font-weight: 900;
-}
-
-.logo{
-  display:inline-grid;
-  place-items:center;
-  width: 30px; height: 30px;
-  border-radius: 10px;
-  background: var(--grad2);
-  box-shadow: var(--shadow);
-}
-
-.topbar__nav{
-  display:flex;
-  flex-wrap: wrap;
-  gap: .45rem;
-  padding: 0 1rem .8rem;
-}
-
-.topbar__nav a{
-  display:inline-block;
-  padding: .35rem .65rem;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  color: var(--muted);
-}
-.topbar__nav a:hover{
-  background: rgba(255,255,255,.08);
-  border-color: var(--stroke);
-  text-decoration: none;
-  color: var(--text);
-}
-
-.hero{
-  position: relative;
-  padding: 3rem 0 2.6rem;
-  overflow: hidden;
-  border-bottom: 1px solid var(--stroke);
-}
-.hero__bg{
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
-    url("images/kotel.jpg") center/cover no-repeat;
-  z-index:-1;
-}
-
-.hero__inner{ position: relative; }
-
-.badge{
-  display:inline-block;
-  padding: .3rem .75rem;
-  border: 1px solid var(--stroke);
-  border-radius: 999px;
-  background: rgba(255,255,255,.06);
-  color: var(--muted);
-}
-
-h1{
-  margin: .7rem 0 .3rem;
-  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
-  letter-spacing: .2px;
-}
-
-.subtitle{
+body {
   margin: 0;
-  max-width: 70ch;
-  color: var(--muted);
+  font-family: Arial, sans-serif;
+  background: #0b0f1a;
+  color: white;
 }
 
-.meta{
-  margin-top: 1.1rem;
-  display:flex;
-  flex-wrap: wrap;
-  gap: .8rem 1.2rem;
-  padding: .85rem 1rem;
-  border: 1px solid var(--stroke);
-  border-radius: var(--r);
-  background: rgba(255,255,255,.06);
-  box-shadow: var(--shadow);
-}
-.meta__k{ color: var(--muted); font-weight: 700; }
-
-.hero__cta{
-  margin-top: 1.2rem;
-  display:flex;
-  gap: .7rem;
-  flex-wrap: wrap;
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap: .5rem;
-  padding: .75rem 1.05rem;
-  border-radius: 999px;
-  border: 1px solid var(--stroke);
-  background: rgba(255,255,255,.06);
-  color: var(--text);
-  box-shadow: var(--shadow);
-  cursor: pointer;
-}
-.btn:hover{
-  transform: translateY(-1px);
-  text-decoration: none;
-}
-.btn--primary{
-  border-color: transparent;
-  background: var(--grad2);
-}
-.btn--ghost{
-  background: rgba(255,255,255,.04);
-}
-.btn--small{
-  padding: .55rem .85rem;
-  box-shadow: none;
-}
-
-.section{
-  padding: 3rem 0;
-  border-bottom: 1px solid var(--stroke);
-}
-
-.section__head{
-  display:flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.2rem;
-}
-
-h2{ margin: 0; font-size: 1.8rem; }
-.muted{ margin: 0; color: var(--muted); }
-
-.qgrid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.qcard{
-  text-align: right;
-  border: 1px solid var(--stroke);
-  border-radius: var(--r);
+.hero__bg {
+  position: absolute;
+  inset: 0;
   background:
-    radial-gradient(250px 160px at 85% 10%, rgba(255,198,92,.25), transparent 60%),
-    radial-gradient(240px 160px at 10% 60%, rgba(111,234,255,.20), transparent 60%),
-    rgba(255,255,255,.06);
-  padding: 1rem 1rem .9rem;
-  box-shadow: var(--shadow);
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)),
+    url("images/kotel.jpg") center/cover no-repeat;
+  z-index: -1;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.qcard {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: transform .15s ease, filter .15s ease;
-}
-.qcard:hover{ transform: translateY(-3px); filter: brightness(1.05); }
-
-.qtag{
-  display:inline-block;
-  font-weight: 800;
-  font-size: .85rem;
-  padding: .2rem .6rem;
-  border-radius: 999px;
-  border: 1px solid var(--stroke);
-  background: rgba(0,0,0,.18);
-  color: var(--muted);
-}
-.qtext{
-  display:block;
-  margin-top: .65rem;
-  font-weight: 800;
-}
-.qgo{
-  display:block;
-  margin-top: .6rem;
-  color: rgba(244,247,255,.86);
-  font-size: .92rem;
+  background: linear-gradient(45deg, #f5c16c, #7ee0ff);
+  color: black;
+  font-weight: bold;
+  transition: transform 0.2s;
 }
 
-.tip{
-  margin-top: 1.1rem;
-  padding: .85rem 1rem;
-  border: 1px dashed rgba(255,255,255,.22);
-  border-radius: var(--r);
-  color: var(--muted);
-  background: rgba(255,255,255,.04);
+.qcard:hover {
+  transform: scale(1.05);
 }
 
-/* ANSWERS */
-.acard{
-  border: 1px solid var(--stroke);
-  border-radius: var(--r);
-  background: rgba(255,255,255,.06);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  margin-bottom: 1rem;
+.answer {
+  margin: 2rem auto;
+  max-width: 700px;
+  padding: 2rem;
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
 }
 
-.acard__head{
-  padding: 1rem 1rem .75rem;
-  background: rgba(0,0,0,.10);
-  border-bottom: 1px solid var(--stroke);
+.answer a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #7ee0ff;
 }
-
-.pill{
-  display:inline-block;
-  padding: .2rem .6rem;
-  border-radius: 999px;
-  border: 1px solid var(--stroke);
-  background: rgba(255,255,255,.06);
-  color: var(--muted);
-  font-weight: 800;
-  font-size: .85rem;
-}
-
-.acard h3{ margin: .55rem 0 0; }
-
-.acard__body{
-  padding: 1rem;
-  color: rgba(244,247,255,.90);
-}
-
-.acard__foot{
-  padding: .85rem 1rem 1rem;
-  display:flex;
-  gap: .6rem;
-  flex-wrap: wrap;
-  border-top: 1px solid var(--stroke);
-  background: rgba(255,255,255,.03);
-}
-
-/* Accent headers per answer */
-.accent-1 .acard__head{ background: linear-gradient(135deg, rgba(255,198,92,.18), rgba(255,255,255,.02)); }
-.accent-2 .acard__head{ background: linear-gradient(135deg, rgba(111,234,255,.18), rgba(255,255,255,.02)); }
-.accent-3 .acard__head{ background: linear-gradient(135deg, rgba(180,122,255,.18), rgba(255,255,255,.02)); }
-.accent-4 .acard__head{ background: linear-gradient(135deg, rgba(255,120,200,.16), rgba(255,255,255,.02)); }
-.accent-5 .acard__head{ background: linear-gradient(135deg, rgba(140,255,180,.16), rgba(255,255,255,.02)); }
-.accent-6 .acard__head{ background: linear-gradient(135deg, rgba(255,150,110,.16), rgba(255,255,255,.02)); }
-.accent-7 .acard__head{ background: linear-gradient(135deg, rgba(255,235,120,.16), rgba(255,255,255,.02)); }
-
-/* Info */
-.infogrid{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-.ibox{
-  border: 1px solid var(--stroke);
-  border-radius: var(--r);
-  background: rgba(255,255,255,.06);
-  box-shadow: var(--shadow);
-  padding: 1rem;
-}
-.ibox__t{ font-weight: 900; margin-bottom: .3rem; }
-.ibox__b{ color: var(--muted); }
-
-.interview{
-  display:grid;
-  gap: 1rem;
-}
-.bubble{
-  border: 1px solid var(--stroke);
-  border-radius: var(--r);
-  background: rgba(255,255,255,.06);
-  box-shadow: var(--shadow);
-  padding: 1rem;
-}
-.bubble__q{ font-weight: 900; }
-.bubble__a{ color: var(--muted); margin-top: .35rem; }
-
-.summary{
-  border: 1px solid var(--stroke);
-  border-radius: var(--r);
-  background: var(--grad2);
-  box-shadow: var(--shadow);
-  padding: 1.1rem 1rem;
-}
-
-.sources{ color: var(--muted); padding-right: 1.2rem; }
-
-.footer{
-  padding: 1.2rem 0 2rem;
-}
-.footer__inner{
-  display:flex;
-  justify-content: space-between;
-  align-items:center;
-  gap: 1rem;
-  color: var(--muted);
-  border-top: 1px solid var(--stroke);
-  padding-top: 1rem;
-}
-
-/* Responsive */
-@media (max-width: 950px){
-  .qgrid{ grid-template-columns: 1fr; }
-  .infogrid{ grid-template-columns: 1fr; }
-}
-
-/* --- Фото в hero ---
-1) Создай папку images и положи файл, например: images/kotel.jpg
-2) Добавь в .hero__bg сверху строку:
-   background: url("images/kotel.jpg") center/cover no-repeat;
-3) И оставь остальные gradients, чтобы было “красочно поверх фото”.
-*/
