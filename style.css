@@ -89,14 +89,11 @@ a:hover{ text-decoration: underline; }
 }
 .hero__bg{
   position:absolute;
-  inset:-40px -40px -40px -40px;
+  inset:0;
   background:
-    radial-gradient(700px 450px at 75% 20%, rgba(255,198,92,.20), transparent 60%),
-    radial-gradient(700px 450px at 20% 35%, rgba(111,234,255,.20), transparent 60%),
-    radial-gradient(650px 450px at 60% 80%, rgba(180,122,255,.20), transparent 60%);
-  filter: blur(0px);
-  opacity: 1;
-  pointer-events: none;
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+    url("images/kotel.jpg") center/cover no-repeat;
+  z-index:-1;
 }
 
 .hero__inner{ position: relative; }
