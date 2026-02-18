@@ -22,10 +22,14 @@ html{ scroll-behavior: smooth; }
 
 body{
   font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  background: var(--rainbow), linear-gradient(180deg, #070815, #050611 65%, #04040c);
+  margin: 0;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+    url("images/kotel.jpg") center/cover no-repeat fixed;
   color: var(--text);
   line-height: 1.7;
 }
+
 
 .container{
   width: min(1050px, calc(100% - 2rem));
