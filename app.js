@@ -28,7 +28,7 @@ const style = document.createElement('style');
 style.textContent = `
   .glow{
     outline: 2px solid rgba(255,255,255,.45);
-    box-shadow: 0 0 0 6px rgba(255,255,255,.08), 0 16px 44px rgba(0,0,0,.40);
+    box-shadow: 0 0 0 6px rgba(255,255,255,.10), 0 16px 44px rgba(0,0,0,.45);
     transform: translateY(-2px);
     transition: .2s ease;
   }
