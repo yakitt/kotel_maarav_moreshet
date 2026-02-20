@@ -160,13 +160,11 @@ h2{ margin:0 0 .4rem; font-size: 1.85rem; }
 .go{ display:block; margin-top:.55rem; color: rgba(245,247,255,.88); }
 
 .acard{
-  margin-top: 1rem;
-  border: 1px solid var(--stroke);
-  border-radius: var(--r);
-  padding: 1rem 1rem 1.1rem;
-  background: rgba(255,255,255,.07);
-  box-shadow: var(--shadow);
-  scroll-margin-top: 30px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
 }
 .acard h3{ margin:.1rem 0 .4rem; }
 
