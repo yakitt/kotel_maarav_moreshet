@@ -37,18 +37,10 @@ body{
 }
 
 .hero{
-  position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
   background:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
-    url("images/kotel.png") center/cover no-repeat;
-
-  border-bottom: 1px solid var(--stroke);
-  color: white;
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.70)),
+    url("./images/kotel.png") center/cover no-repeat;
 }
 .hero__inner{
   position: relative;
