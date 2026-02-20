@@ -37,18 +37,18 @@ body{
 }
 
 .hero{
-  border-bottom: 1px solid var(--stroke);
-  background: var(--grad);
   position: relative;
-  overflow: hidden;
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:-60px;
-  background: var(--rainbow);
-  opacity: .9;
-  pointer-events:none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+    url("images/kotel.jpg") center/cover no-repeat;
+
+  border-bottom: 1px solid var(--stroke);
+  color: white;
 }
 .hero__inner{
   position: relative;
